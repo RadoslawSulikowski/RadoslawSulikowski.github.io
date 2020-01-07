@@ -137,7 +137,7 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      succes: getAllTasks
+      succes: getAllTasks()
     });
   }
 
