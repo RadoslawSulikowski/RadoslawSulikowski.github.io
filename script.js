@@ -137,7 +137,11 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      succes: getAllTasks()
+      complete: function(data) {
+        if(data.status === 200) {
+          getAllTasks();
+        }
+      }
     });
   }
 
